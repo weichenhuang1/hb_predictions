@@ -16,7 +16,7 @@ def train_with_best_hyperparams(X, y):
     grid_search = GridSearchCV(
         estimator=model,
         param_grid=param_grid,
-        scoring='neg_mean_squared_error',  # or 'neg_root_mean_squared_error', 'r2', etc.
+        scoring='neg_mean_squared_error', 
         cv=3,         
         n_jobs=3,     
         verbose=1

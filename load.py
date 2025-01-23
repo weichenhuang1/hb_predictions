@@ -14,12 +14,10 @@ def load(filepath):
         X, y_hot_food, test_size=0.2, random_state=21
     )
 
-    # 6. SPLIT INTO TRAIN & TEST FOR SUSHI
     X_train_sushi, X_test_sushi, y_train_sushi, y_test_sushi = train_test_split(
         X, y_sushi, test_size=0.2, random_state=21
     )
 
-    # 7. SPLIT INTO TRAIN & TEST FOR DRINKS
     X_train_drinks, X_test_drinks, y_train_drinks, y_test_drinks = train_test_split(
         X, y_drinks, test_size=0.2, random_state=21
     )
